@@ -38,3 +38,5 @@ bot/venv/
 client/logs
 client/data
 client/config.yml
+client/session.token
+client/device.json
