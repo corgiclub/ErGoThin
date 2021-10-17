@@ -4,6 +4,7 @@ from pathlib import Path
 
 import yaml
 from fastapi import APIRouter
+from nonebot.plugin import get_loaded_plugins
 
 from src.utils.stream import ListStream
 
@@ -31,5 +32,3 @@ def index():
         .map(lambda x: read_yaml(os.path.join(str(x), 'config.yml'))) \
         .collect()
     return plugins
-
-
