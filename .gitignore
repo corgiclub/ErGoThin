@@ -41,4 +41,4 @@ client/config.yml
 client/session.token
 client/device.json
 
-bot-monitor/node_modules
+bot-monitor-web/node_modules
