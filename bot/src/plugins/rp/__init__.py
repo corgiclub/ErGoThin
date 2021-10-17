@@ -1,5 +1,6 @@
 from nonebot import on_command, on_keyword
 from nonebot.adapters import Bot, Event
+from nonebot.plugin import get_loaded_plugins
 from nonebot.typing import T_State
 from datetime import datetime
 from nonebot.adapters.cqhttp import Message

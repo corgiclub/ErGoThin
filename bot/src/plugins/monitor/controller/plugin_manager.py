@@ -22,6 +22,7 @@ class PluginBO:
 
 @router.get('/api/v1/plugins')
 def index():
+    plugins = get_loaded_plugins()
     def read_yaml(filepath: str) -> dict:
         with open(filepath, 'r', encoding='utf8') as f:
             return yaml.load(f.read(), Loader=yaml.SafeLoader)

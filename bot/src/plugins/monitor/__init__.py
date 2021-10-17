@@ -7,4 +7,3 @@ app = driver.server_app
 
 app.include_router(plugin_manager.router)
 app.include_router(index.router)
-

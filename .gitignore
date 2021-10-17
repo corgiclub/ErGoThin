@@ -40,3 +40,5 @@ client/data
 client/config.yml
 client/session.token
 client/device.json
+
+bot-monitor/node_modules
