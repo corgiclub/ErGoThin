@@ -1,10 +1,10 @@
 <template>
-  <Login v-if="$route.name === 'login'" />
-  <a-layout v-else id="layout">
+  <!--<Login v-if="$route.name === 'login'" />-->
+  <a-layout id="layout">
     <Nav class="nav" />
     <a-layout class="layout-view">
       <SideBar />
-      <a-layout style="padding: 24px 24px">
+      <a-layout style="padding: 24px 24px;">
         <a-layout-content
           :style="{ background: '#fff', padding: '24px', margin: 0 }">
           <router-view />
@@ -22,7 +22,7 @@ import { useRoute } from 'vue-router'
 
 export default defineComponent({
   components: {
-    Login,
+    // Login,
     SideBar,
     Nav
   },

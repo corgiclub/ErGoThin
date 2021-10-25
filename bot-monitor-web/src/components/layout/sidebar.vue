@@ -6,29 +6,33 @@
       :style="{ height: '100%', borderRight: 0 }"
       mode="inline"
       @click="clickMenuItem">
-      <a-sub-menu key="sub1">
-        <template #title>
-          <span>
-            <laptop-outlined />
-            服务器概览
-          </span>
-        </template>
-        <a-menu-item key="guide">基本信息</a-menu-item>
-        <a-menu-item key="service">服务情况</a-menu-item>
-      </a-sub-menu>
-      <a-sub-menu key="sub2">
-        <template #title>
-          <span>
-            <laptop-outlined />
-            系统运维
-          </span>
-        </template>
-        <a-menu-item key="script">脚本执行</a-menu-item>
-      </a-sub-menu>
-      <a-menu-item key="project">
+      <a-menu-item key="home">
         <laptop-outlined />
         工程创建
       </a-menu-item>
+      <!--<a-sub-menu key="sub1">-->
+      <!--  <template #title>-->
+      <!--    <span>-->
+      <!--      <laptop-outlined />-->
+      <!--      Bot概览-->
+      <!--    </span>-->
+      <!--  </template>-->
+      <!--  <a-menu-item key="guide">基本信息</a-menu-item>-->
+      <!--  <a-menu-item key="service">服务情况</a-menu-item>-->
+      <!--</a-sub-menu>-->
+      <!--<a-sub-menu key="sub2">-->
+      <!--  <template #title>-->
+      <!--    <span>-->
+      <!--      <laptop-outlined />-->
+      <!--      系统运维-->
+      <!--    </span>-->
+      <!--  </template>-->
+      <!--  <a-menu-item key="script">脚本执行</a-menu-item>-->
+      <!--</a-sub-menu>-->
+      <!--<a-menu-item key="project">-->
+      <!--  <laptop-outlined />-->
+      <!--  工程创建-->
+      <!--</a-menu-item>-->
     </a-menu>
   </a-layout-sider>
 </template>

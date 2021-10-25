@@ -1,6 +1,6 @@
 <template>
   <a-layout-header class="nav">
-    <div class="logo">Corgitech-Manager</div>
+    <div class="logo">Ergo Monitor</div>
     <!--<a-menu-->
     <!--  v-model:selectedKeys="selectedKeys1"-->
     <!--  theme="dark"-->

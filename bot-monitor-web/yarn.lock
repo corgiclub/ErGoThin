@@ -6780,10 +6780,10 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite@^2.5.6:
-  version "2.6.7"
-  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.7.tgz#e15c1d8327950720b5d7c4ec3fb36a5a58ccf7cb"
-  integrity sha1-4VwdgyeVByC118TsP7NqWljM98s=
+vite@^2.6.10:
+  version "2.6.10"
+  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.10.tgz?cache=0&sync_timestamp=1634576025236&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvite%2Fdownload%2Fvite-2.6.10.tgz#7a4f420c6e2c7d9062c7f9ce4578a817c72b3842"
+  integrity sha1-ek9CDG4sfZBix/nORXioF8crOEI=
   dependencies:
     esbuild "^0.13.2"
     postcss "^8.3.8"
