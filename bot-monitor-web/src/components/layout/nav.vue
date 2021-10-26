@@ -22,4 +22,16 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+.nav {
+  height: 48px;
+  line-height: 48px;
+}
+.logo {
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  float: left;
+  margin: 0 24px 0 0;
+}
 </style>

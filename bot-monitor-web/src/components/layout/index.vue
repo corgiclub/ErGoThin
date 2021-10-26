@@ -39,20 +39,8 @@ export default defineComponent({
   }
 })
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 #layout {
-  .nav {
-    height: 48px;
-    line-height: 48px;
-  }
-  .logo {
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
-    float: left;
-    margin: 0 24px 0 0;
-  }
   .layout-view {
     min-height: calc(100vh - 48px);
   }
