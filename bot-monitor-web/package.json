@@ -44,10 +44,13 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "typescript": "^4.4.2",
     "vite": "^2.6.10",
+    "vite-plugin-windicss": "^1.4.12",
     "vue-eslint-parser": "^7.11.0",
     "vue-tsc": "^0.28.6",
+    "windicss": "^3.2.0",
     "yorkie": "^2.0.0"
   },
   "gitHooks": {

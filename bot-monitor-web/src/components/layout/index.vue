@@ -1,5 +1,5 @@
 <template>
-  <!--<Login v-if="$route.name === 'login'" />-->
+  <!--<Login v-if="route.name === 'login'" />-->
   <a-layout id="layout">
     <Nav class="nav" />
     <a-layout class="layout-view">
@@ -13,31 +13,13 @@
     </a-layout>
   </a-layout>
 </template>
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
+<script lang="ts" setup>
 import Nav from '@/components/layout/nav.vue'
 import SideBar from '@/components/layout/sidebar.vue'
 import Login from '@/views/login.vue'
 import { useRoute } from 'vue-router'
 
-export default defineComponent({
-  components: {
-    // Login,
-    SideBar,
-    Nav
-  },
-  setup () {
-    const $route = useRoute()
-
-    return {
-      $route,
-      selectedKeys1: ref<string[]>(['2']),
-      selectedKeys2: ref<string[]>(['1']),
-      collapsed: ref<boolean>(false),
-      openKeys: ref<string[]>(['sub1'])
-    }
-  }
-})
+const route = useRoute()
 </script>
 <style lang="scss" scoped>
 #layout {
