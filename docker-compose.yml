@@ -16,7 +16,7 @@ services:
   bot-monitor-web:
     build: ./bot-monitor-web
     ports:
-      - "9201:80"
+      - "9301:80"
     environment:
       - TZ=Asia/Shanghai
     depends_on:
