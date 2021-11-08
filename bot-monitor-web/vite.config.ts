@@ -14,8 +14,8 @@ export default defineConfig({
   server: {
     // 自定义代理规则
     proxy: {
-      '/api': {
-        target: 'http://manager.corgi.plus',
+      '/monitor/api': {
+        target: 'http://localhost:9080',
         changeOrigin: true
       }
     }
