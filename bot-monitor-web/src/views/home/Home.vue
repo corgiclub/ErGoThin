@@ -1,8 +1,6 @@
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
-import { useBotInfo, useBotPlugins } from '@/views/home/useBotInfo'
+import { useBotInfo, useBotPlugins } from '@/views/home/hook'
 
-// const plugins = ref([{ name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }])
 const { info } = useBotInfo()
 const { plugins } = useBotPlugins()
 </script>

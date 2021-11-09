@@ -23,7 +23,6 @@ export function useBotPlugins () {
   const plugins = ref([])
   async function listPlugins () {
     const res = await BotApi.listPlugins()
-    console.log(res.data)
     plugins.value = res.data
   }
 
