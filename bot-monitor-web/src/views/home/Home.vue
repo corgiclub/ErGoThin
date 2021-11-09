@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
-import BotApi from '@/api/bot'
-import { useBotOverview } from '@/views/home/useBotOverview'
+import { useBotInfo, useBotPlugins } from '@/views/home/useBotInfo'
 
-const plugins = ref([{ name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }])
-const { info } = useBotOverview()
+// const plugins = ref([{ name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }])
+const { info } = useBotInfo()
+const { plugins } = useBotPlugins()
 </script>
 
 <template>

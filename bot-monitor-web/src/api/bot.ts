@@ -9,9 +9,9 @@ class BotApi {
   static getInfo (): Ajax.PromiseAxiosResponse<BotInfo> {
     return service.get('/monitor/api/v1/info')
   }
-  // static listPlugins () {
-  //   return service.get('/monotor/api/v1/plugins')
-  // }
+  static listPlugins () {
+    return service.get('/monitor/api/v1/plugins')
+  }
 }
 
 export default BotApi
