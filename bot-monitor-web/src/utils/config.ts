@@ -1,4 +1,4 @@
-import { AxiosResponse, AxiosRequestConfig } from 'axios'
+import axios, { AxiosResponse, AxiosRequestConfig, AxiosTransformer } from 'axios'
 import { jsonCamel2Line, jsonLine2Camel } from '@/utils/json'
 
 const axiosConfig: AxiosRequestConfig = {
@@ -10,10 +10,12 @@ const axiosConfig: AxiosRequestConfig = {
     return JSON.stringify(data)
   }],
   // 请求后的数据处理
-  transformResponse: [function (data: AxiosResponse) {
-    jsonLine2Camel(data)
-    return data
-  }],
+  transformResponse: [
+    ...axios.defaults.transformResponse as AxiosTransformer[],
+    function (data: AxiosResponse) {
+      jsonLine2Camel(data)
+      return data
+    }],
   // 自定义的请求头
   headers: {
     // 'X-Requested-With': 'XMLHttpRequest',

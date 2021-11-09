@@ -1,20 +1,17 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue'
 import BotApi from '@/api/bot'
+import { useBotOverview } from '@/views/home/useBotOverview'
 
 const plugins = ref([{ name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }, { name: '123', module: '456' }])
-
-onMounted(async function () {
-  const res = await BotApi.getInfo()
-  console.log(res)
-})
+const { info } = useBotOverview()
 </script>
 
 <template>
   <a-typography>
-    <a-typography-title>NoneBot</a-typography-title>
+    <a-typography-title>{{ info.name }}</a-typography-title>
     <a-typography-paragraph>
-      Working Directory: /
+      Working Directory: {{ info.dir }}
     </a-typography-paragraph>
   </a-typography>
   <a-card title="插件总览" class="mt-8">

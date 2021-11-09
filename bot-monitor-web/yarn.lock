@@ -1264,9 +1264,9 @@ autoprefixer@^9, autoprefixer@^9.8.6:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
-axios@^0.21.4:
+axios@0.21.4:
   version "0.21.4"
-  resolved "https://registry.npmmirror.com/axios/download/axios-0.21.4.tgz?cache=0&sync_timestamp=1635213960429&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Faxios%2Fdownload%2Faxios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  resolved "https://registry.npmmirror.com/axios/download/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
   integrity sha1-xnuQ3AVo5cHPKwuFjEO6KOLtpXU=
   dependencies:
     follow-redirects "^1.14.0"
