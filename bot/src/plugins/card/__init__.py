@@ -10,6 +10,6 @@ nonebot.init()
 async def _():
     bot = nonebot.get_bot()
     try:
-        await bot.send_group_msg(group_id=590819255, message='今日打卡喔')
+        await bot.send_group_msg(group_id=590819255, message='记得打卡')
     except Exception as e:
         print(e)
