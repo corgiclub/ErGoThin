@@ -1,4 +1,4 @@
-import { onMounted, ref } from 'vue'
+import { onMounted, Ref, ref } from 'vue'
 import BotApi, { BotInfo } from '@/api/bot'
 
 export function useBotInfo () {
@@ -20,7 +20,7 @@ export function useBotInfo () {
 }
 
 export function useBotPlugins () {
-  const plugins = ref([])
+  const plugins: Ref<any[]> = ref([])
   async function listPlugins () {
     const res = await BotApi.listPlugins()
     plugins.value = res.data
