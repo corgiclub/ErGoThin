@@ -13,15 +13,6 @@ services:
     depends_on:
       - bot
 
-  bot-monitor-web:
-    build: ./bot-monitor-web
-    ports:
-      - "9301:80"
-    environment:
-      - TZ=Asia/Shanghai
-    depends_on:
-      - bot
-
   bot:
     build: ./bot
     expose:
