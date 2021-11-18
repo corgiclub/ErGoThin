@@ -2,7 +2,7 @@ version: "3"
 
 services:
   client:
-    image: pcrbot/gocqhttp:latest
+    image: xzsk2/gocqhttp-docker:latest
     volumes:
       - ./client:/data:delegated
     tty: true
@@ -19,6 +19,8 @@ services:
       - "9080"
     environment:
       - TZ=Asia/Shanghai
+    volumes:
+      - /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime:ro
 
 networks:
   default:
